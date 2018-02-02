@@ -1,0 +1,62 @@
+{
+    "helium": {
+        "numchr": 1,
+        "chrlen": 2500000,
+        "seeds": {
+            "genome": 8013785666,
+            "trio": 1776,
+            "sequencing": {
+                "mother": 384138428,
+                "father": 1181960406,
+                "proband": 543448518
+            }
+        },
+        "ninherited": 100,
+        "ndenovo": 5
+    },
+    "neon": {
+        "numchr": 1,
+        "chrlen": 25000000,
+        "seeds": {
+            "genome": 7066509186,
+            "trio": 1812,
+            "sequencing": {
+                "mother": 948354772,
+                "father": 1585666360,
+                "proband": 1622278877
+            }
+        },
+        "ninherited": 200,
+        "ndenovo": 10
+    },
+    "argon": {
+        "numchr": 1,
+        "chrlen": 250000000,
+        "seeds": {
+            "genome": 3015700578,
+            "trio": 1944,
+            "sequencing": {
+                "mother": 670818734,
+                "father": 1477620573,
+                "proband": 1755707489
+            }
+        },
+        "ninherited": 300,
+        "ndenovo": 12
+    },
+    "krypton": {
+        "numchr": 10,
+        "chrlen": 250000000,
+        "seeds": {
+            "genome": 5307527701,
+            "trio": 1955,
+            "sequencing": {
+                "mother": 558372226,
+                "father": 735331771,
+                "proband": 928126641
+            }
+        },
+        "ninherited": 750,
+        "ndenovo": 60
+    }
+}
