@@ -1,4 +1,4 @@
-ALLFAMILIES = ['helium', 'neon']
+ALLFAMILIES = ['helium', 'neon', 'argon', 'krypton']
 ALLSAMPLES = ['mother', 'father', 'proband']
 
 rule all:

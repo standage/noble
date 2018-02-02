@@ -63,11 +63,12 @@ snakemake --configfile noble.json -np helium-{mother,father,proband}-reads-cor.f
 # Actually execute the commands to create the "helium" trio
 snakemake --configfile noble.json -p helium-{mother,father,proband}-reads-cor.fq.gz
 
-# Create the "neon" trio, allowing up to 4 commands to run simultaneously
-snakemake --configfile noble.json --jobs 4 -p neon-{mother,father,proband}-reads-cor.fq.gz
+# Create the "neon" trio, allowing up to 4 commands to run simultaneously,
+#   and skip the error correction steps.
+snakemake --configfile noble.json --jobs 4 -p neon-{mother,father,proband}-reads.fq.gz
 
 # Create all trios
-snakemake --configfile noble.json --jobs 4 -p {helium,neon,argon,krypton}-{mother,father,proband}-reads-cor.fq.gz
+snakemake --configfile noble.json --jobs 4 -p all
 ```
 
 Generating the helium and neon trios requires only a few minutes of runtime.
