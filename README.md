@@ -1,5 +1,7 @@
 # Noble Trios: simulated pedigrees for benchmarking *de novo* variant discovery methods
 
+[![Docker image status at quay.io](https://quay.io/repository/standage/noble/status "Docker ready")](https://quay.io/repository/standage/noble)
+
 
 ## Synopsis
 
