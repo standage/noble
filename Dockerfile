@@ -22,6 +22,13 @@ RUN tar -xzf df39031f8254f8351852f9f8b51b643475226ea0.tar.gz
 RUN cd Lighter-df39031f8254f8351852f9f8b51b643475226ea0/ && make && cp lighter /usr/local/bin/ && cd -
 RUN rm -r df39031f8254f8351852f9f8b51b643475226ea0.tar.gz Lighter-df39031f8254f8351852f9f8b51b643475226ea0/
 
+# Install bedtools
+RUN wget https://github.com/arq5x/bedtools2/archive/v2.27.1.tar.gz
+RUN tar -xzf v2.27.1.tar.gz
+RUN cd bedtools2-2.27.1/ && make && cp bin/* /usr/local/bin/ && cd -
+RUN rm -r v2.27.1.tar.gz bedtools2-2.27.1/
+
+
 # Install kevlar
 RUN pip3 install pysam==0.11.2.2 networkx==1.11 pandas==0.20.3 scipy==1.0.0
 RUN pip3 install git+https://github.com/dib-lab/khmer.git@cd6dbdf21a6b1e4fc4806a205af2c5474d9996c2
